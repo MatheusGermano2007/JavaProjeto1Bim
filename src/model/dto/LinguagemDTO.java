@@ -3,7 +3,7 @@ public class LinguagemDTO {
     private int id_linguagem;
     private String nome;
     private String tipo;
-    private int anoCriacao;
+    private int ano_Criacao;
     private String criador;
 
     public int getId_linguagem() {
@@ -30,12 +30,12 @@ public class LinguagemDTO {
         this.tipo = tipo;
     }
 
-    public int getAnoCriacao() {
-        return anoCriacao;
+    public int getAno_Criacao() {
+        return ano_Criacao;
     }
 
-    public void setAnoCriacao(int ano_criacao) {
-        this.anoCriacao = ano_criacao;
+    public void setAno_Criacao(int ano_criacao) {
+        this.ano_Criacao = ano_criacao;
     }
 
     public String getCriador() {
