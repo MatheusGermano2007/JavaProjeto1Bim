@@ -89,6 +89,7 @@ public class LinguagensDeProgramação {
                 System.out.println("Atualizado");
                 
             } else if (opcao == 4) {
+                
                 System.out.print("\nDigite o ID da linguagem que deseja excluir: ");
                 int idParaExcluir = Ler.nextInt();
                 Ler.nextLine(); 
@@ -97,6 +98,7 @@ public class LinguagensDeProgramação {
                 System.out.println("Excluido com sucesso");
                 
             } else if (opcao != 0) {
+                
                 System.out.println("\nOpcao invalida, tente novamente.");
             }
         } while (opcao != 0);
