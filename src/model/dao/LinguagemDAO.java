@@ -7,13 +7,9 @@ import java.sql.SQLException;
 import java.sql.ResultSet;
 
     // Essa classe eh o nosso DAO. O papel dela eh concentrar toda a conversa com o banco de dados
-    // pra fazer o basico do CRUD: criar, ler, atualizar e deletar as linguagens
 public class LinguagemDAO {
     
-    // Pega os dados de uma linguagem nova e joga pra dentro do banco pra salvar
-    // (o nome do metodo ta cadastrarUsuario, mas a gente sabe que eh a linguagem kkk)
-    
-    public void cadastrarUsuario(LinguagemDTO linguagem) {
+    public void cadastrarLinguagem(LinguagemDTO linguagem) {
         
         String sql = "INSERT INTO linguagens (nome, tipo, ano_Criacao, criador) VALUES (?, ?, ?, ?)";
         
@@ -30,7 +26,7 @@ public class LinguagemDAO {
         }
     }
     
-    // Vai no banco, puxa todas as linguagens que estao salvas e imprime uma por uma no console
+   
     public void selecionarLinguagem() {
         
         String sql = "select * from linguagens";
@@ -48,8 +44,8 @@ public class LinguagemDAO {
             e.printStackTrace();
         }
     }
-    // Pega as informacoes editadas de uma linguagem e manda o banco substituir as antigas
-    // Ele usa o ID pra saber exatamente quem ele tem que alterar
+   
+    
     public void atualizarLinguagem(LinguagemDTO linguagem) {
         
         String sql = "UPDATE linguagens SET "
@@ -72,7 +68,7 @@ public class LinguagemDAO {
             e.printStackTrace();
         }   
     }
-    // Recebe um ID especifico e manda o banco apagar a linguagem correspondente sem do
+   
     public void excluirLinguagem(int id) {
         
         String sql = "DELETE FROM linguagens WHERE id_linguagem = ?";

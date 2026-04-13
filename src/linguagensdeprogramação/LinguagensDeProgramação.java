@@ -54,7 +54,7 @@ public class LinguagensDeProgramação {
                     System.out.print("Criador: ");
                     novaLinguagem.setCriador(Ler.nextLine());
                     
-                    dao.cadastrarUsuario(novaLinguagem); 
+                    dao.cadastrarLinguagem(novaLinguagem); 
                     System.out.println("Salvo com sucesso");
                     
                     System.out.print("\nDeseja cadastrar mais uma? S/N: ");
